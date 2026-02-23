@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | CyberIntel Corp</title>
+  <link rel="stylesheet" href="contactus.css" />
+</head>
+
+
+
+<body>
+
+<header>
+  <h1>CyberIntel Corp</h1>
+  <p>We’re here to help you stay secure</p>
+</header>
+
+<nav class="navbar">
+    
+    <a class="btn-home" href="index.html">Return to Home</a>
+  </nav>
+  
+
+<section>
+  <h2>Send Us a Secure Message</h2>
+
+  <form id="contactForm">
+    <div class="name-row">
+      <div class="input-group">
+        <label>First Name</label>
+        <input type="text" id="firstName" required />
+      </div>
+      <div class="input-group">
+        <label>Last Name</label>
+        <input type="text" id="lastName" required />
+      </div>
+    </div>
+
+    <div class="input-group">
+      <label>Email</label>
+      <input type="email" id="email" required />
+    </div>
+
+    <div class="input-group">
+      <label>Phone Number</label>
+      <input type="tel" id="number" maxlength="10" required />
+    </div>
+
+    <div class="input-group">
+      <label>Message</label>
+      <textarea id="message" required></textarea>
+    </div>
+
+    <button type="submit">Send Secure Message</button>
+    <p id="statusMsg"></p>
+  </form>
+</section>
+
+<section>
+  <h2>Our Contact Details</h2>
+
+  <div class="services">
+    <div class="card">
+      <h3>📍 Office Address</h3>
+      <p>
+        CyberIntel Corp<br>
+        123 Cyber Security Lane<br>
+        Washington, DC 20001
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>📞 Call Us</h3>
+      <p>
+        +1 (202) 555-0123<br>
+        Mon – Fri: 9:00 AM – 6:00 PM
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>📧 Email</h3>
+      <p>contact@cyberintelcorp.edu</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>CyberIntel Corp © 2026 | CY-650 Capstone</p>
+</footer>
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+
+<!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
