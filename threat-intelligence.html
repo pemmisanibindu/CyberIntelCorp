@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Threat Intelligence | CyberIntel Corp</title>
+  <link rel="stylesheet" href="incident-response.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const ctx = document.getElementById('threatChart').getContext('2d');
+    
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Malware', 'Phishing', 'Ransomware', 'Insider Threat'],
+                datasets: [{
+                    label: 'Detected Threats',
+                    data: [12, 19, 7, 5],
+                    backgroundColor: '#00f0ff'
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        labels: {
+                            color: '#ffffff'
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        ticks: { color: '#ffffff' }
+                    },
+                    y: {
+                        ticks: { color: '#ffffff' }
+                    }
+                }
+            }
+        });
+    });
+    </script>
+
+<body>
+
+<header>
+  <h1>Threat Intelligence</h1>
+  
+</header>
+
+<nav class="navbar">
+    
+  <a class="btn-home" href="index.html">Return to Home</a>
+</nav>
+
+<section>
+  <h2>Overview</h2>
+  <p>
+    At CyberIntel Corp, our Threat Intelligence Dashboard serves as a centralized intelligence hub for organizations that require precision, speed, and strategic visibility in today’s rapidly evolving cyber threat environment. Built for enterprise-scale operations, the platform delivers real-time, actionable intelligence through a refined, executive-ready interface that supports security teams, risk managers, and corporate leadership alike.
+  </p>
+  
+  <p>
+    Rather than overwhelming users with disconnected data streams, the dashboard consolidates global threat intelligence, dark web monitoring, vulnerability disclosures, and sector-specific risk indicators into a single, unified operational view. This streamlined approach enables organizations to clearly understand their exposure, assess risk posture, and prioritize defensive actions with confidence.
+
+  </p>
+  
+  
+</section>
+
+<section>
+    <h2>Real-Time Threat Visibility</h2>
+  
+    <section class="ir-phase">
+  
+        <h2>Core capabilities include</h2>
+        
+      <div class="ir-list">
+          <ul>
+            <li>Continuous monitoring of global threat feeds and emerging attack trends</li>
+            <li>Dark web intelligence and brand exposure tracking</li>
+            <li>Vulnerability identification aligned with industry standards such as the National Institute of Standards and Technology guidelines</li>
+            <li>Abnormal traffic patterns</li>
+            <li>Threat actor profiling mapped to the MITRE Corporation ATT&CK framework</li>
+            <li>Asset-focused risk scoring and exposure analysis</li>
+          </ul>
+        </div>
+      <p>These capabilities allow security teams to identify and mitigate risks before they escalate into operational disruptions.</p>
+    </section>
+      
+    <section class="ir-phase">
+
+        <h2>Operational Intelligence for Security Teams</h2>
+        
+        <p>
+            For Security Operations Centers (SOCs) and cybersecurity professionals, the dashboard enhances efficiency and accelerates response. Customizable alerts, incident tracking workflows, and deep-dive threat analysis tools enable proactive defense strategies and streamlined investigations.
+        </p>
+            
+        <div class="ir-subsection">
+          <h4>Key operational features include</h4>
+          <ul>
+            <li>Custom alert configurations based on asset criticality</li>
+            <li>Real-time incident tracking and response coordination</li>
+            <li>Automated threat prioritization to reduce alert fatigue</li>
+            <li>Integration support for SIEM and existing security infrastructure</li>
+          </ul>
+        </div>
+      <p>By aligning intelligence with operational workflows, organizations can reduce response times and strengthen overall defensive posture.</p>
+    </section>
+      
+  
+    <section class="ir-phase">
+
+        <h2>Executive & Board-Level Reporting</h2>
+        
+      <p>
+        Cybersecurity is a business risk — not just a technical issue. CyberIntel Corp’s Threat Intelligence Dashboard provides executive-ready insights designed to support strategic decision-making and board-level reporting
+        </p>
+      
+        <div class="ir-subsection">
+          <h4>Executive features include</h4>
+          <ul>
+            <li>High-level risk scoring and trend analysis</li>
+            <li>Visual dashboards highlighting key threat metrics</li>
+            <li>Compliance-aligned reporting for frameworks such as ISO 27001 and CIS Controls</li>
+            <li>Customizable summaries for stakeholder communication</li>
+          </ul>
+        </div>
+        <p>These reporting capabilities ensure leadership teams maintain full visibility into cyber risk exposure while demonstrating measurable security improvements over time.</p>
+      </section>
+      <section class="ir-phase">
+
+        <h2>Strategic Value of the Threat Intelligence Dashboard</h2>
+        
+      <p>
+        CyberIntel Corp’s Threat Intelligence Dashboard empowers organizations to transition from reactive cybersecurity to proactive risk management. By delivering contextual intelligence, operational clarity, and executive-level insight within a single platform, we help businesses reduce uncertainty, protect critical assets, and reinforce stakeholder confidence.
+        </p>
+      
+        <p>With real-time visibility, intelligent prioritization, and enterprise-focused reporting, your organization gains the strategic advantage required to stay ahead of emerging threats — today and into the future.</p>
+        
+      </section>
+      <section class="dashboard">
+        <h2>Live Threat Dashboard</h2>
+      
+        <div class="dashboard-grid">
+      
+          <div class="card">
+            <h3>Active Threats</h3>
+            <p class="metric">27</p>
+            <p>High severity alerts detected</p>
+          </div>
+      
+          <div class="card">
+            <h3>Vulnerabilities</h3>
+            <p class="metric">14</p>
+            <p>Open CVEs requiring patching</p>
+          </div>
+      
+          <div class="card">
+            <h3>Dark Web Mentions</h3>
+            <p class="metric">5</p>
+            <p>Brand exposure alerts</p>
+          </div>
+      
+          <div class="card">
+            <h3>Risk Score</h3>
+            <p class="metric">78%</p>
+            <p>Overall organizational risk</p>
+          </div>
+      
+        </div>
+        <canvas id="threatChart" width="400" height="150"></canvas>
+      </section>
+      
+  </section>
+  
+
+
+  
+
+<footer>
+  <p>CyberIntel Corp © 2026 | CY-650 Capstone</p>
+</footer>
+
+<script src="script.js"></script>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/69937cdd0be1cb1c349662a7/1jhk1vgoi';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+    
+</body>
+</html>
