@@ -1,130 +1,251 @@
+/* ===== GLOBAL STYLING ===== */
 body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    color: #1f2933;
-    background-color: #f9fafb;
-  }
-
-  header {
-    background: #0f172a;
-    color: #ffffff;
-    padding: 40px 20px;
-    text-align: center;
-  }
-
-  .logo {
-    width: 120px;
-    margin-bottom: 15px;
-  }
-
-  nav {
-    background: #020617;
-    padding: 10px;
-    text-align: center;
-  }
-
-  nav a {
-    color: #e5e7eb;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-  }
-
-  nav a:hover {
-    text-decoration: underline;
-  }
-
-  section {
-    padding: 40px 20px;
-    max-width: 1000px;
-    margin: auto;
-  }
-
-  h2 {
-    color: #0f172a;
-  }
-
-  .services {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-  }
-
-  .card {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  }
-
- 
-
-  .input-group {
-    margin-bottom: 15px;
-  }
-
-  .input-group label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-
-  .input-group input,
-  .input-group textarea {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-  }
-
-  button {
-    background: #0f172a;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-
-  button:hover {
-    background: #1e293b;
-  }
-
-  .status {
-    margin-top: 10px;
-    font-size: 14px;
-  }
-
-  footer {
-    background: #020617;
-    color: #e5e7eb;
-    text-align: center;
-    padding: 20px;
-    font-size: 14px;
-  }
-
-  .name-row {
-display: flex;
-gap: 80px;
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  line-height: 1.7;
+  color: #e2e8f0;
+  background: linear-gradient(135deg, #0f172a, #111827);
 }
 
-.name-row .input-group {
-flex: 1;
-max-width: 200px;
+/* ===== HEADER ===== */
+header {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+  border-bottom: 3px solid #38bdf8;
 }
 
+.logo {
+  width: 130px;
+  margin-bottom: 15px;
+}
+
+/* ===== NAVIGATION ===== */
+nav {
+  background: #020617;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+nav a {
+  color: #cbd5e1;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+/* ===== SECTIONS ===== */
+section {
+  padding: 70px 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* ===== HEADINGS ===== */
+h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #38bdf8;
+}
+
+/* ===== CARDS / SERVICES ===== */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(56,189,248,0.3);
+}
+
+/* ===== VISION / MISSION ===== */
+.vision-mission {
+  background: #111827;
+  border-radius: 15px;
+}
+
+.vm-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.vm-box {
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 12px;
+  width: 320px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+/* ===== TIMELINE ===== */
+.timeline-item {
+  margin: 20px auto;
+  max-width: 700px;
+  background: #1e293b;
+  padding: 20px;
+  border-left: 4px solid #38bdf8;
+  border-radius: 8px;
+}
+
+.timeline-item span {
+  font-weight: bold;
+  color: #38bdf8;
+}
+
+/* ===== TEAM SECTION ===== */
+.team-cards {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.team-card {
+  background: #1e293b;
+  padding: 25px;
+  width: 260px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+}
+
+/* ===== ANIMATED ABOUT SECTION ===== */
+.about-animated {
+  padding: 80px;
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  text-align: center;
+  border-radius: 15px;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== FORMS ===== */
 form {
-max-width: 450px;   
-  
+  max-width: 500px;
+  margin: auto;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
 }
 
 .input-group input,
 .input-group textarea {
-max-width: 100%;
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background: #0f172a;
+  color: #e2e8f0;
 }
 
-.input-group {
-width: 100%;
+.input-group input:focus,
+.input-group textarea:focus {
+  outline: none;
+  border-color: #38bdf8;
+}
+
+/* ===== BUTTON ===== */
+button {
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  color: #0f172a;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #0ea5e9, #38bdf8);
+  transform: scale(1.05);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: #020617;
+  color: #94a3b8;
+  text-align: center;
+  padding: 25px;
+  font-size: 14px;
+  border-top: 1px solid #1e293b;
+}
+
+/* ===== HERO SECTION (COMPACT VERSION) ===== */
+
+.hero {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+  padding: 80px 20px;   
+  text-align: center;
+  color: white;
+}
+
+.hero-content {
+  max-width: 700px;
+  margin: auto;
+}
+
+.hero-logo {
+  width: 90px;    
+  margin-bottom: 20px;  
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.hero h1 {
+  font-size: 36px;      
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+}
+
+.hero-tagline {
+  font-size: 18px;  
+  color: #38bdf8;
+  margin-bottom: 15px;
+}
+
+.hero-subtext {
+  font-size: 16px;   
+  color: #cbd5e1;
+  margin-bottom: 25px;
 }
 
